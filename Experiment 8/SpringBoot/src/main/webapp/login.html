@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial;
+        }
+        form {
+            margin: 100px auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #333;
+            border: none;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: gray;
+            border: none;
+            padding: 10px;
+            width: 70%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="LoginServlet" method="post">
+        <h2>Login Form</h2>
+        Username: <input type="text" name="username" required><br>
+        Password: <input type="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
